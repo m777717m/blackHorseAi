@@ -1,44 +1,106 @@
-// Menu Data based on the provided Foodics menu link
 const menuData = [
     {
         category: "وجبات الدجاج",
         items: [
-            "دجاج كاجون", "فاهيتا دجاج", "صدر دجاج مشوي", "دجاج كاري", 
-            "كوردون بلو دجاج", "برياني", "دجاج بالفطر", "دجاج بالبيستو", 
-            "تيكا دجاج بالفريكة", "ستروكنوف دجاج", "دجاج بالزبدة", "وجبة زنجر"
+            { name: "دجاج كاجون", price: "19 ر.س" },
+            { name: "فاهيتا دجاج", price: "19 ر.س" },
+            { name: "صدر دجاج مشوي", price: "18 ر.س" },
+            { name: "كاري دجاج", price: "19 ر.س" },
+            { name: "دجاج بالفطر", price: "21 ر.س" },
+            { name: "دجاج بالبيستو", price: "22 ر.س" },
+            { name: "تيكا بالفريكة", price: "19 ر.س" },
+            { name: "ستروكنوف دجاج", price: "20 ر.س" },
+            { name: "دجاج بالزبدة", price: "20 ر.س" },
+            { name: "برياني", price: "19 ر.س" },
+            { name: "كوردن بلو", price: "20 ر.س" }
         ]
     },
     {
-        category: "وجبات اللحوم",
-        items: ["لحم بالخضار", "كباب لحم مشوي", "ستيك لحم", "كرات اللحم"]
+        category: "وجبات اللحم",
+        items: [
+            { name: "كرات اللحم", price: "27 ر.س" },
+            { name: "ستيك لحم", price: "27 ر.س" },
+            { name: "فاهيتا لحم", price: "28 ر.س" },
+            { name: "كاري لحم", price: "27 ر.س" },
+            { name: "روست بیف", price: "28 ر.س" },
+            { name: "كفتة بالطحينة", price: "28 ر.س" },
+            { name: "ستروكونوف لحم", price: "26 ر.س" }
+        ]
     },
     {
-        category: "وجبات السمك",
-        items: ["سلمون مشوي", "فيليه سمك", "روبيان مشوي"]
+        category: "وجبات الأسماك",
+        items: [
+            { name: "فيلية سمك", price: "22 ر.س" },
+            { name: "سلمون", price: "30 ر.س" },
+            { name: "بیلا روبیان", price: "30 ر.س" }
+        ]
     },
     {
-        category: "السندوتشات",
-        items: ["كلوب ساندوتش", "ساندوتش دجاج مشوي", "ساندوتش تونة"]
+        category: "الساندويشات",
+        items: [
+            { name: "فاهيتا دجاج", price: "10 ر.س" },
+            { name: "سيزر دجاج", price: "10 ر.س" },
+            { name: "شاورما دجاج", price: "11 ر.س" },
+            { name: "برجر دجاج", price: "10 ر.س" },
+            { name: "برجر لحم", price: "16 ر.س" },
+            { name: "برجر لحم سويس", price: "17 ر.س" },
+            { name: "ستيك تشيز لحم", price: "16 ر.س" },
+            { name: "شاورما لحم", price: "13 ر.س" },
+            { name: "حلوم بیستو برجر", price: "13 ر.س" },
+            { name: "وجبة زنجر", price: "19 ر.س" }
+        ]
     },
     {
-        category: "سلاط",
-        items: ["سلطة سيزر", "سلطة يونانية", "سلطة كينوا", "تبولة"]
+        category: "الباستا",
+        items: [
+            { name: "لازانيا", price: "24 ر.س" },
+            { name: "فوتوشيني الفريدو", price: "23 ر.س" },
+            { name: "سباغيتي بولونيز", price: "23 ر.س" }
+        ]
     },
     {
-        category: "باستا",
-        items: ["باستا بيستو", "باستا دجاج ألفريدو", "سباغيتي بولونيز"]
+        category: "السلطات",
+        items: [
+            { name: "سلطة روبيان", price: "13 ر.س" },
+            { name: "سلطة الباستا", price: "10 ر.س" },
+            { name: "كرانشي سلط", price: "10 ر.س" },
+            { name: "شمندر وجرجير", price: "12 ر.س" },
+            { name: "سلطة المانجو", price: "12 ر.س" },
+            { name: "سلطة سيزر", price: "10 ر.س" },
+            { name: "سلطة البوملي", price: "11 ر.س" },
+            { name: "کراب سلط", price: "13 ر.س" },
+            { name: "جكاوا سلاط", price: "11 ر.س" }
+        ]
     },
     {
         category: "الحلويات",
-        items: ["بودينج الشوفان", "تشيز كيك بالفراولة", "ليزي كيك", "غرانولا بالزبادي اليوناني", "كاسترد", "كرات طاقة التمر"]
+        items: [
+            { name: "ليزي كيك", price: "6 ر.س" },
+            { name: "تشيز كيك", price: "7 ر.س" },
+            { name: "بودينق تشوكليت", price: "7 ر.س" },
+            { name: "بودينق مانجو", price: "7 ر.س" },
+            { name: "بودينق تمر", price: "7 ر.س" },
+            { name: "بودينق فراولة", price: "7 ر.س" },
+            { name: "كرات التمر", price: "7 ر.س" },
+            { name: "كاسترد", price: "6 ر.س" },
+            { name: "غراونلا بالزبادي", price: "15 ر.س" }
+        ]
     },
     {
-        category: "مشروبات",
-        items: ["عصير برتقال طازج", "عصير ليمون نعناع", "مياه معدنية", "شاي أخضر"]
+        category: "المشروبات",
+        items: [
+            { name: "غازيات", price: "3.5 ر.س" },
+            { name: "عصير", price: "3 ر.س" },
+            { name: "ماء", price: "2 ر.س" }
+        ]
     },
     {
-        category: "الاشتراكات",
-        items: ["باقة خسارة الوزن", "باقة بناء العضلات", "الباقة المتوازنة"]
+        category: "باقات الاشتراكات",
+        items: [
+            { name: "اشتراك (وجبة + سناك)", price: "550 ر.س" },
+            { name: "اشتراك (وجبتين + سناك)", price: "1100 ر.س" },
+            { name: "اشتراك (ثلاث وجبات + سناك)", price: "1400 ر.س" }
+        ]
     }
 ];
 
@@ -69,6 +131,7 @@ if (mainMenuToggleBtn) {
 
 // Render Menu
 function renderMenu() {
+    menuListEl.innerHTML = '';
     menuData.forEach(category => {
         // Create category wrapper
         const catDiv = document.createElement('div');
@@ -80,21 +143,31 @@ function renderMenu() {
         titleEl.textContent = category.category;
         catDiv.appendChild(titleEl);
         
+        const itemsGrid = document.createElement('div');
+        itemsGrid.className = 'items-grid';
+        
         // Add items
         category.items.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'menu-item';
-            itemDiv.innerHTML = `<span class="item-name">${item}</span>`;
             
-            // Optional: clicking an item could send a message about it
-            itemDiv.addEventListener('click', () => {
-                chatInputEl.value = `أريد معرفة المزيد عن ${item}`;
-                chatInputEl.focus();
-            });
+            if (typeof item === 'object') {
+                itemDiv.innerHTML = `
+                    <span class="item-name">${item.name}</span>
+                    <span class="item-price">${item.price}</span>
+                `;
+                itemDiv.addEventListener('click', () => {
+                    chatInputEl.value = `أريد طلب ${item.name}`;
+                    chatInputEl.focus();
+                });
+            } else {
+                itemDiv.innerHTML = `<span class="item-name">${item}</span>`;
+            }
             
-            catDiv.appendChild(itemDiv);
+            itemsGrid.appendChild(itemDiv);
         });
         
+        catDiv.appendChild(itemsGrid);
         menuListEl.appendChild(catDiv);
     });
 }
@@ -106,7 +179,7 @@ function addMessage(text, sender) {
     
     let avatarHtml = '';
     if (sender === 'bot') {
-        avatarHtml = `<div class="avatar"><img src="logo.png" alt="Bot"></div>`;
+        avatarHtml = `<div class="avatar ai-avatar"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/></svg></div>`;
     } else {
         avatarHtml = `<div class="avatar">أنت</div>`;
     }
@@ -139,9 +212,11 @@ function showTypingIndicator() {
     typingDiv.className = 'message bot-message';
     typingDiv.id = 'typing-indicator';
     typingDiv.innerHTML = `
-        <div class="avatar"><img src="logo.png" alt="Bot"></div>
-        <div class="typing-indicator" style="display: block;">
-            <span></span><span></span><span></span>
+        <div class="avatar ai-avatar"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/></svg></div>
+        <div style="display:flex; flex-direction:column; gap:0.5rem; align-items: flex-start;">
+            <div class="typing-indicator" style="display: block;">
+                <span></span><span></span><span></span>
+            </div>
         </div>
     `;
     chatMessagesEl.appendChild(typingDiv);
@@ -264,22 +339,7 @@ chatFormEl.addEventListener('submit', async (e) => {
     }
 });
 
-// Mobile Sidebar Toggle Logic
-const menuToggleBtn = document.getElementById('menu-toggle');
-const sidebarEl = document.querySelector('.sidebar');
-const sidebarOverlayEl = document.getElementById('sidebar-overlay');
-
-if (menuToggleBtn && sidebarEl && sidebarOverlayEl) {
-    menuToggleBtn.addEventListener('click', () => {
-        sidebarEl.classList.toggle('open');
-        sidebarOverlayEl.classList.toggle('show');
-    });
-
-    sidebarOverlayEl.addEventListener('click', () => {
-        sidebarEl.classList.remove('open');
-        sidebarOverlayEl.classList.remove('show');
-    });
-}
+// Mobile Sidebar Toggle Logic removed
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
